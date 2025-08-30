@@ -1,3 +1,4 @@
+import 'package:captain_app/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../controllers/auth_controller.dart';
@@ -131,6 +132,21 @@ class LoginScreen extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
+                const SizedBox(height: 16),
+                GestureDetector(
+                  onTap: () {
+                    Get.toNamed(Routes.SIGNUP);
+                  },
+                  child: Text(
+                    "Don't have an account? Sign Up",
+                    style: TextStyle(
+                      color: Colors.orange,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 14,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
             ],
           ),
         ),

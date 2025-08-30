@@ -87,4 +87,45 @@ class AuthController extends GetxController {
   void clearError() {
     errorMessage.value = '';
   }
+  
+    Future<bool> signup({
+      required String name,
+      required String phone,
+      required String email,
+      required dynamic drivingLicense,
+      required String aadhar,
+      required dynamic aadharFile,
+      required String pan,
+      required dynamic panFile,
+      required String vehicleReg,
+      required dynamic vehicleRegFile,
+      required dynamic vehicleRACFile,
+      required String bankAccount,
+      required String accountHolder,
+      required String ifsc,
+      required dynamic bankPassbookFile,
+    }) async {
+      isLoading.value = true;
+      errorMessage.value = '';
+      try {
+        // Simulate API call delay
+        await Future.delayed(const Duration(seconds: 2));
+        // Basic validation
+        if (name.isEmpty || phone.isEmpty || email.isEmpty || drivingLicense == null ||
+            aadhar.isEmpty || aadharFile == null || pan.isEmpty || panFile == null ||
+            vehicleReg.isEmpty || vehicleRegFile == null || vehicleRACFile == null ||
+            bankAccount.isEmpty || accountHolder.isEmpty || ifsc.isEmpty || bankPassbookFile == null) {
+          errorMessage.value = 'Please fill all fields and upload all documents.';
+          return false;
+        }
+        // Here, you would send data and files to your backend
+        // For demo, just return true
+        return true;
+      } catch (e) {
+        errorMessage.value = 'Signup failed. Please try again.';
+        return false;
+      } finally {
+        isLoading.value = false;
+      }
+    }
 } 

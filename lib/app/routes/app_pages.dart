@@ -1,3 +1,4 @@
+import 'package:captain_app/app/views/auth/signup_screen.dart';
 import 'package:captain_app/app/views/auth/splash_screen.dart';
 import 'package:get/get.dart';
 import '../views/auth/login_screen.dart';
@@ -35,6 +36,11 @@ class AppPages {
       page: () => const LoginScreen(),
       binding: AuthBinding(),
     ),
+      GetPage(
+        name: Routes.SIGNUP,
+        page: () => const SignupScreen(),
+        binding: AuthBinding(),
+      ),
     GetPage(
       name: Routes.OTP,
       page: () => const OtpScreen(),
