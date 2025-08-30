@@ -19,14 +19,14 @@ class LoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               // Logo and Title
-              const Icon(
-                Icons.delivery_dining,
-                size: 80,
-                color: Colors.orange,
-              ),
-              const SizedBox(height: 24),
+              Image.asset(
+						   'assets/images/bhukk_logo.png',
+						   width: 200,
+						   height: 200,
+					    ),
+              const SizedBox(height: 2),
               const Text(
-                'Bhukk Delivery Partner',
+                'Delivery Partner',
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,

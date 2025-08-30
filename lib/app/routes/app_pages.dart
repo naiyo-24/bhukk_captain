@@ -1,3 +1,4 @@
+import 'package:captain_app/app/views/auth/splash_screen.dart';
 import 'package:get/get.dart';
 import '../views/auth/login_screen.dart';
 import '../views/auth/otp_screen.dart';
@@ -22,9 +23,13 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.LOGIN;
+  static const INITIAL = Routes.SPLASH;
 
   static final routes = [
+    GetPage(
+      name: Routes.SPLASH,
+      page: () => const SplashScreen(),
+    ),
     GetPage(
       name: Routes.LOGIN,
       page: () => const LoginScreen(),

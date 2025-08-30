@@ -40,7 +40,7 @@ class AccountScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(16),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.grey.withOpacity(0.1),
+                            color: Colors.grey.withAlpha(50),
                             spreadRadius: 1,
                             blurRadius: 10,
                             offset: const Offset(0, 2),
@@ -344,7 +344,7 @@ class AccountScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.1),
+            color: Colors.grey.withAlpha(50),
             spreadRadius: 1,
             blurRadius: 5,
             offset: const Offset(0, 2),

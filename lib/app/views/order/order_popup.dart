@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../controllers/order_controller.dart';
-import '../../data/models/order_model.dart';
-import '../../widgets/app_bar.dart';
 
 class OrderPopup extends StatelessWidget {
   const OrderPopup({super.key});

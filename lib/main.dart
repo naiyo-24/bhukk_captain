@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'app/routes/app_pages.dart';
-import 'app/bindings/auth_binding.dart';
-import 'app/bindings/home_binding.dart';
-import 'app/bindings/order_binding.dart';
-import 'app/bindings/account_binding.dart';
 import 'app/controllers/auth_controller.dart';
 import 'app/controllers/account_controller.dart';
 
